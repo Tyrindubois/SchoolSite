@@ -1,0 +1,219 @@
+body, h1, p {
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    color: #333;
+    font-family: Arial, sans-serif;
+}
+
+p {
+    color: #666;
+    font-family: 'Helvetica', sans-serif;
+    line-height: 1.5;
+    margin-bottom: 15px;
+}
+
+.highlight {
+    background-color: yellow;
+    font-weight: bold;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.width-wrap {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 0 2em 2em;
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    border-top: none;
+    margin-bottom: 3em;
+}
+
+footer hr {
+    width: 50vw;
+    min-width: 300px;
+    max-width: 890px;
+    margin: 3em 0 2em;
+    border: none;
+    border-bottom: 3px dotted #4CAF50;
+}
+
+dl dt:after {
+    content: ":";
+}
+
+:root {
+    --background-color: #1a1a1a;
+    --width-wrap-color: #333333;
+    --text-color: #ffffff;
+    --heading-color: #ffcc00;
+    --link-color: #4db8ff;
+    --header-link-color: #ff6666;
+    --selected-text-bg: #ffcc66;
+}
+
+body {
+    background-color: var(--background-color);
+    color: var(--text-color);
+}
+
+.width-wrap {
+    background-color: var(--width-wrap-color);
+}
+
+h1, h2, h3 {
+    color: var(--heading-color);
+}
+
+a {
+    color: var(--link-color);
+}
+
+header a {
+    color: var(--header-link-color);
+}
+
+::selection {
+    background-color: var(--selected-text-bg);
+}
+
+header {
+    background-color: var(--background-color);
+}
+
+.top-bar {
+    background-color: #333;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    display: block;
+    padding: 15px 20px;
+    text-decoration: none;
+    color: white;
+}
+
+nav ul li a:hover {
+    background-color: #555;
+}
+
+.width-wrap {
+    padding: 20px;
+}
+
+header:after {
+    content: '';
+    display: block;
+    border-bottom: 1px dotted #ccc;
+    margin: 0 20px;
+}
+
+header {
+    border-top: 4px solid rgba(0, 0, 0, 0.1);
+    margin: 0;
+    padding: 0;
+}
+
+header nav {
+    border-bottom: 1px dotted rgba(0, 0, 0, 0.3);
+    margin: 0 -20px;
+}
+
+header nav {
+    padding: 0 20px;
+}
+
+header nav ul {
+    margin: 0;
+    padding: 0;
+}
+
+header nav ul li {
+    display: inline;
+}
+
+header nav ul li a {
+    border-top: 4px solid transparent;
+    padding: 1em;
+    margin: 0 1em;
+    display: inline-block;
+}
+
+header nav ul li a:hover {
+    border-top-color: #ff6600;
+}
+
+header nav ul li a {
+    line-height: 1;
+    vertical-align: top;
+}
+
+header nav ul li a {
+    margin-top: 1em;
+}
+
+header nav ul li a {
+    margin-bottom: 0.5em;
+}
+
+header nav ul li a:hover {
+    margin-top: 0;
+}
+
+header nav ul li a {
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+}
+
+table th, table td {
+    padding: 0.3em 1em;
+}
+
+thead th, tfoot th, tbody th[scope="col"] {
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+tbody td {
+    background-color: rgba(0, 0, 0, 0.03);
+}
+
+tbody tr:nth-child(even) td {
+    background-color: rgba(0, 0, 0, 0.08);
+}
+
+label {
+    display: block;
+}
+
+input[type="radio"]+label,
+input[type="checkbox"]+label {
+    display: inline;
+}
+
+input[type="submit"] {
+    border: none;
+    padding: 1em 3em;
+    color: white;
+    background-color: #0077cc;
+}
+
+input:invalid, select:invalid, textarea:invalid {
+    background-color: #ffcccc;
+}

@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="./styles/main.css">
+    <meta charset="UTF-8" />
+    <meta name="msapplication-TileColor" content="#dxa532c">
+    <meta name="theme-color" content="#ffffff">
+    <link rel="icon" type="image/png" href="./images/favicon-32x32.png">
+    <!-- found me -->
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Tyrin dubois" />
+    <meta name="description" content="A simple website about me! tyrin dubois!" />
+    
+    <title>CSD110 Tyrin Dubois</title>
+
+</head>
+
+<body>
+    <div class="width-wrap">
+        <header id="top">
+            <nav>
+                <ul>
+                    <li>
+                        <a href="index.html">Home</a>
+                    </li>
+                    <li>
+                        <a href="links.html">Links</a>
+                    </li>
+                    <li>
+                        <a href="glossary.html">Glossary</a>
+                    </li>
+
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <h1>Survey</h1>
+            <form method="POST" action="https://formspree.io/f/xleyoqjy">
+                <p>
+                    <label for="name_field">What is your name?<span class="required">*</span></label>
+                    <input type="text" id="name_field" name="name_field" required>
+                </p>
+                <p>
+                    <label for="email_field">What is your email?<span class="required">*</span></label>
+                    <input type="email" id="email_field" name="email_field" required>
+                </p>
+                <p>
+                    <label for="best_whole_number">Which whole number is best?</label>
+                    <input type="number" id="best_whole_number" name="best_whole_number" min="1" step="1">
+                </p>
+                <p>
+                    <label for="best_day">Which day is best?</label>
+                    <input type="date" id="best_day" name="best_day">
+                </p>
+                <p>
+                    <label for="best_bear">Which bear is best?<span class="required">*</span></label>
+                    <select id="best_bear" name="best_bear" required>
+                        <option value="" selected>&nbsp;</option>
+                        <option value="Black">Black</option>
+                        <option value="Brown">Brown</option>
+                        <option value="Care">Care</option>
+                        <option value="Panda">Panda</option>
+                        <option value="Polar">Polar</option>
+                        <option value="Teddy">Teddy</option>
+                    </select>
+                </p>
+                <fieldset>
+                    <legend>Do you like radio buttons?</legend>
+                    <label>
+                        <input type="radio" name="radio_options" value="yes"> Yes
+                    </label>
+                    <label>
+                        <input type="radio" name="radio_options" value="no"> No
+                    </label>
+                    <label>
+                        <input type="radio" name="radio_options" value="?" checked> None of your business
+                    </label>
+                </fieldset>
+                <p>
+                    <label for="life_meaning">What is the meaning of life?</label>
+                    <textarea id="life_meaning" name="life_meaning" rows="5" cols="50"
+                        placeholder="Enter the correct answer here"></textarea>
+                </p>
+                <!-- GREAT WORK -->
+                <button type="submit">Send</button>
+            </form>
+        </main>
+        <footer>
+            <hr>
+            <blockquote>Every storm runs out of rain,<br>
+                just like every dark night turns into day</blockquote>
+            <cite>
+                <span>
+                    &#45; Gary Allan
+                </span>
+            </cite>
+            <p>&#169; 2023
+                <a href="mailto:tyrindubois@gmail.com?subject=Message%20from%20CSD112%20Website">Tyrin Dubois</a>
+            </p>
+
+
+            <picture>
+                <source type="image/svg+xml" srcset="images/sc-logo.svg" />
+                <img src="images/sc-logo.png" width="70" srcset="
+                  images/sc-logo.png,
+                  images/sc-logo_105.png 1.5x,
+                  images/sc-logo_140.png 2x" alt="Sault-College logo" />
+            </picture>
+            <!-- OVERALL GREAT WORK, KEEP UP THAT WAY -->
+        </footer>
+        <a href="#top" title="Back to top">◤</a>
+    </div>
+</body>
+
+</html>
